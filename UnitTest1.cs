@@ -16,7 +16,7 @@ namespace UnitTestCalculatorApp
             //act
             var result = Calculator.CalculateTotal(10, 2);
             //assert
-            Assert.Equals(12, result);
+            Assert.AreEqual(12, result);
         }
     }
 }
