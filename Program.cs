@@ -1,18 +1,16 @@
 ﻿using System;
-using CustomExtension;
 
-
-namespace CustomExtension
+namespace CalculatorApp
 {
-    public static class Calculate
+    public class Calculate
     {
-        public static int CalculateTotal(int a, int b)
+        public int CalculateTotal(int a, int b)
         {
             //declare variable
             int total;
 
             //calculate total and write out to console
-            total = a + b;
+            total = a - b;
             Console.Write("The total of " + a + "+" + b + " is " + total);
             return total;
         }
@@ -41,7 +39,8 @@ namespace CalculatorApp
             convertSecondNumber = Convert.ToInt32(secondNumber);
 
             //call CalculateTotal method with int forms of firstnumber and secondnumber to calculate total
-            int something = Calculate.CalculateTotal(convertFirstNumber, convertSecondNumber);
+            var Calculator = new Calculate();
+            int sumOfBothNumbers = Calculator.CalculateTotal(convertFirstNumber, convertSecondNumber);
 
             //causes cmd prompt to stay open for debugging
             Console.ReadLine();

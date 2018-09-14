@@ -1,5 +1,5 @@
 ﻿using System;
-using CustomExtension;
+using CalculatorApp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestCalculatorApp
@@ -10,8 +10,13 @@ namespace UnitTestCalculatorApp
         [TestMethod]
         public void TestMethod1()
         {
-            //unit test to validate  
-            Calculate.CalculateTotal(1, 2);
+            //unit test to validate
+            //arrange
+            var Calculator = new Calculate();
+            //act
+            var result = Calculator.CalculateTotal(10, 2);
+            //assert
+            Assert.Equals(12, result);
         }
     }
 }
