@@ -23,12 +23,20 @@ namespace CalculatorApp
             convertSecondNumber = Convert.ToInt32(secondNumber);
 
             //Call Calculate function and assign convertFirstNumber, convertSecondNumber to public variables Operand1 and Operand2
-            Calculate addition = new Calculate();
+            CalculateTotalAddition addition = new CalculateTotalAddition();
             addition.Operand1 = convertFirstNumber;
             addition.Operand2 = convertSecondNumber;
+            //Call Calculate function and assign convertFirstNumber, convertSecondNumber to public variables Operand1 and Operand2
+            CalculateTotalSubtraction subtraction = new CalculateTotalSubtraction();
+            subtraction.Operand1 = convertFirstNumber;
+            subtraction.Operand2 = convertSecondNumber;
 
             //Call displayTotal function to display total
             addition.displayTotal();
+
+            //Call displayTotal function to display subtraction total
+            subtraction.displayTotal();
+
             //causes cmd prompt to stay open for debugging
             Console.ReadLine();
         }

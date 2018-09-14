@@ -1,21 +1,21 @@
 ﻿using System;
 
+
 namespace CalculatorApp
 {
-    public class CalculateTotalAddition
+    public class CalculateTotalSubtraction
     {
         public int Operand1;
         public int Operand2;
 
         public int CalculateTotal()
         {
-            return Operand1 + Operand2;
+            return Operand1 - Operand2;
         }
 
         public void displayTotal()
         {
-            Console.WriteLine("The total of " + Operand1 + "+" + Operand2 + " is " + CalculateTotal());
+            Console.WriteLine("The total of " + Operand1 + "-" + Operand2 + " is " + CalculateTotal());
         }
-
     }
 }

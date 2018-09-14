@@ -12,7 +12,7 @@ namespace UnitTestCalculatorApp
         {
             //unit test to validate Calculate class addition
             //arrange
-            var result = new Calculate();
+            var result = new CalculateTotalAddition();
             //act
             result.Operand1 = 10;
             result.Operand2 = 2;
@@ -22,7 +22,7 @@ namespace UnitTestCalculatorApp
         [TestMethod]
         public void TestMethod2()
         {
-            var subtraction = new Calculate();
+            var subtraction = new CalculateTotalSubtraction();
             subtraction.Operand1 = 10;
             subtraction.Operand2 = 2;
             Assert.AreEqual(8, 8);
