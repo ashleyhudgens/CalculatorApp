@@ -4,15 +4,23 @@ namespace CalculatorApp
 {
     public class Calculate
     {
-        public int CalculateTotal(int a, int b)
-        {
-            //declare variable
-            int total;
+        public int Operand1;
+        public int Operand2;
 
-            //calculate total and write out to console
-            total = a + b;
-            Console.Write("The total of " + a + "+" + b + " is " + total);
-            return total;
+        public int CalculateTotal()
+        {
+            return Operand1 + Operand2;
         }
+
+        public int Subtraction()
+        {
+            return Operand1 - Operand2;
+        }
+
+        public void displayTotal()
+        {
+            Console.Write("The total of " + Operand1 + "+" + Operand2 + " is " + CalculateTotal());
+        }
+
     }
 }
